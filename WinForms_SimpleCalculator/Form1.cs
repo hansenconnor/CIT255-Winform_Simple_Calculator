@@ -42,5 +42,22 @@ namespace WinForms_SimpleCalculator
             //After that we can create font and assign font to label
             //TextBox1.Font = new Font(pfc.Families[0], label1.Font.Size);
         }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            // TODO: validate here
+
+            // TODO: Clear form components and load new
+
+            var frm = new CalculatorForm();
+            frm.Location = this.Location;
+            frm.StartPosition = FormStartPosition.Manual;
+            frm.FormClosing += delegate { this.Show(); };
+            frm.Show();
+            this.Hide();
+
+            //CalculatorForm validationForm = new CalculatorForm();
+            //validationForm.ShowDialog();
+        }
     }
 }

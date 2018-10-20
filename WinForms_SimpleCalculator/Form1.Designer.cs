@@ -40,13 +40,15 @@ namespace WinForms_SimpleCalculator
             this.materialSingleLineTextField4 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialSingleLineTextField1
             // 
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(19, 151);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(10, 10);
             this.materialSingleLineTextField1.Margin = new System.Windows.Forms.Padding(10);
             this.materialSingleLineTextField1.MaxLength = 32767;
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -66,7 +68,7 @@ namespace WinForms_SimpleCalculator
             // 
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(19, 199);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(10, 58);
             this.materialSingleLineTextField2.Margin = new System.Windows.Forms.Padding(15);
             this.materialSingleLineTextField2.MaxLength = 32767;
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -85,7 +87,7 @@ namespace WinForms_SimpleCalculator
             // 
             this.materialSingleLineTextField3.Depth = 0;
             this.materialSingleLineTextField3.Hint = "";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(19, 252);
+            this.materialSingleLineTextField3.Location = new System.Drawing.Point(10, 111);
             this.materialSingleLineTextField3.Margin = new System.Windows.Forms.Padding(15);
             this.materialSingleLineTextField3.MaxLength = 32767;
             this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
@@ -104,7 +106,7 @@ namespace WinForms_SimpleCalculator
             // 
             this.materialSingleLineTextField4.Depth = 0;
             this.materialSingleLineTextField4.Hint = "";
-            this.materialSingleLineTextField4.Location = new System.Drawing.Point(19, 305);
+            this.materialSingleLineTextField4.Location = new System.Drawing.Point(10, 164);
             this.materialSingleLineTextField4.Margin = new System.Windows.Forms.Padding(15);
             this.materialSingleLineTextField4.MaxLength = 32767;
             this.materialSingleLineTextField4.MouseState = MaterialSkin.MouseState.HOVER;
@@ -125,13 +127,13 @@ namespace WinForms_SimpleCalculator
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.CausesValidation = false;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(15, 99);
+            this.materialLabel1.Location = new System.Drawing.Point(283, 96);
             this.materialLabel1.MaximumSize = new System.Drawing.Size(300, 50);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(140, 24);
+            this.materialLabel1.Size = new System.Drawing.Size(113, 19);
             this.materialLabel1.TabIndex = 8;
             this.materialLabel1.Text = "Create Account";
             this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,9 +144,8 @@ namespace WinForms_SimpleCalculator
             this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialRaisedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Enabled = false;
             this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(-1, 373);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(0, 222);
             this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.materialRaisedButton1.MinimumSize = new System.Drawing.Size(273, 0);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -154,24 +155,36 @@ namespace WinForms_SimpleCalculator
             this.materialRaisedButton1.TabIndex = 5;
             this.materialRaisedButton1.Text = "Sign Up";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel1.Controls.Add(this.materialSingleLineTextField1);
+            this.panel1.Controls.Add(this.materialRaisedButton1);
+            this.panel1.Controls.Add(this.materialSingleLineTextField2);
+            this.panel1.Controls.Add(this.materialSingleLineTextField3);
+            this.panel1.Controls.Add(this.materialSingleLineTextField4);
+            this.panel1.Location = new System.Drawing.Point(277, 137);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(273, 258);
+            this.panel1.TabIndex = 9;
             // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(273, 450);
-            this.Controls.Add(this.materialRaisedButton1);
+            this.ClientSize = new System.Drawing.Size(760, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.materialSingleLineTextField4);
-            this.Controls.Add(this.materialSingleLineTextField3);
-            this.Controls.Add(this.materialSingleLineTextField2);
-            this.Controls.Add(this.materialSingleLineTextField1);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimumSize = new System.Drawing.Size(273, 450);
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Post Scheduler";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +199,7 @@ namespace WinForms_SimpleCalculator
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField4;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private Panel panel1;
     }
 }
 
