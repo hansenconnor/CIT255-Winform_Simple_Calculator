@@ -57,7 +57,7 @@ namespace WinForms_SimpleCalculator
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
             this.materialSingleLineTextField1.Size = new System.Drawing.Size(235, 23);
-            this.materialSingleLineTextField1.TabIndex = 3;
+            this.materialSingleLineTextField1.TabIndex = 1;
             this.materialSingleLineTextField1.TabStop = false;
             this.materialSingleLineTextField1.Text = "Email";
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
@@ -76,7 +76,7 @@ namespace WinForms_SimpleCalculator
             this.materialSingleLineTextField2.SelectionLength = 0;
             this.materialSingleLineTextField2.SelectionStart = 0;
             this.materialSingleLineTextField2.Size = new System.Drawing.Size(235, 23);
-            this.materialSingleLineTextField2.TabIndex = 4;
+            this.materialSingleLineTextField2.TabIndex = 2;
             this.materialSingleLineTextField2.TabStop = false;
             this.materialSingleLineTextField2.Text = "Full Name";
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
@@ -95,7 +95,7 @@ namespace WinForms_SimpleCalculator
             this.materialSingleLineTextField3.SelectionLength = 0;
             this.materialSingleLineTextField3.SelectionStart = 0;
             this.materialSingleLineTextField3.Size = new System.Drawing.Size(235, 23);
-            this.materialSingleLineTextField3.TabIndex = 5;
+            this.materialSingleLineTextField3.TabIndex = 3;
             this.materialSingleLineTextField3.TabStop = false;
             this.materialSingleLineTextField3.Text = "Username";
             this.materialSingleLineTextField3.UseSystemPasswordChar = false;
@@ -114,10 +114,10 @@ namespace WinForms_SimpleCalculator
             this.materialSingleLineTextField4.SelectionLength = 0;
             this.materialSingleLineTextField4.SelectionStart = 0;
             this.materialSingleLineTextField4.Size = new System.Drawing.Size(235, 23);
-            this.materialSingleLineTextField4.TabIndex = 6;
+            this.materialSingleLineTextField4.TabIndex = 4;
             this.materialSingleLineTextField4.TabStop = false;
             this.materialSingleLineTextField4.Text = "Password";
-            this.materialSingleLineTextField4.UseSystemPasswordChar = true;
+            this.materialSingleLineTextField4.UseSystemPasswordChar = false;
             // 
             // materialLabel1
             // 
@@ -125,29 +125,33 @@ namespace WinForms_SimpleCalculator
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.CausesValidation = false;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(12, 95);
+            this.materialLabel1.Location = new System.Drawing.Point(15, 99);
+            this.materialLabel1.MaximumSize = new System.Drawing.Size(300, 50);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(297, 46);
+            this.materialLabel1.Size = new System.Drawing.Size(140, 24);
             this.materialLabel1.TabIndex = 8;
             this.materialLabel1.Text = "Create Account";
-            this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.AutoSize = true;
             this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Enabled = false;
             this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(19, 373);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(-1, 373);
             this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
+            this.materialRaisedButton1.MinimumSize = new System.Drawing.Size(273, 0);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(73, 36);
-            this.materialRaisedButton1.TabIndex = 9;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(273, 36);
+            this.materialRaisedButton1.TabIndex = 5;
             this.materialRaisedButton1.Text = "Sign Up";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             // 
@@ -156,7 +160,7 @@ namespace WinForms_SimpleCalculator
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(800, 485);
+            this.ClientSize = new System.Drawing.Size(273, 450);
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialSingleLineTextField4);
@@ -164,7 +168,9 @@ namespace WinForms_SimpleCalculator
             this.Controls.Add(this.materialSingleLineTextField2);
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimumSize = new System.Drawing.Size(273, 450);
             this.Name = "CalculatorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Post Scheduler";
             this.ResumeLayout(false);
             this.PerformLayout();
